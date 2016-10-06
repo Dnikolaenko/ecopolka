@@ -1,0 +1,82 @@
+2016-07-11 16:21:30 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /var/www/clients/client94/web197/web/system/library/db/mysqli.php on line 19
+2016-07-11 16:21:30 - PHP Notice:  Error: Subquery returns more than 1 row<br />Error No: 1242<br />SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM oc_category_path cp LEFT JOIN oc_category_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '3' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM oc_url_alias WHERE query = 'category_id=54') AS keyword FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '54' AND cd2.language_id = '3' in /var/www/clients/client94/web197/web/system/library/db/mysqli.php on line 41
+2016-07-11 16:21:30 - PHP Notice:  Trying to get property of non-object in /var/www/clients/client94/web197/web/admin/model/catalog/category.php on line 213
+2016-07-15 15:07:18 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-07-31 11:34:32 - PHP Notice:  Undefined index: enquiry in /var/www/clients/client94/web197/web/catalog/controller/information/contact.php on line 174
+2016-08-01 4:29:52 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 4:39:04 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 4:45:58 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 4:48:14 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 4:49:17 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 4:50:23 - PHP Notice:  Undefined index: header-login-redirect in /var/www/clients/client94/web197/web/catalog/controller/module/tm_header_login.php on line 109
+2016-08-01 8:49:08 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 19
+2016-08-01 8:49:08 - PHP Notice:  Error: Subquery returns more than 1 row<br />Error No: 1242<br />SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM oc_category_path cp LEFT JOIN oc_category_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '3' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM oc_url_alias WHERE query = 'category_id=58') AS keyword FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '58' AND cd2.language_id = '3' in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 41
+2016-08-01 8:49:08 - PHP Notice:  Trying to get property of non-object in /home/dmitriy/site/www/ecopolka/admin/model/catalog/category.php on line 213
+2016-08-02 12:14:58 - PHP Notice:  Undefined variable: product in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 67
+2016-08-02 12:15:37 - PHP Notice:  Undefined variable: product in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 109
+2016-08-02 12:16:08 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 446
+2016-08-02 12:16:08 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 446
+2016-08-02 12:18:13 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:18:13 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:18:51 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:18:51 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:24:25 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 384
+2016-08-02 12:24:25 - PHP Warning:  Invalid argument supplied for foreach() in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 384
+2016-08-02 12:24:25 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 384
+2016-08-02 12:24:25 - PHP Warning:  Invalid argument supplied for foreach() in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 384
+2016-08-02 12:25:11 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:25:11 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:25:36 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:25:36 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:44:52 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:44:52 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:45:07 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:45:07 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 382
+2016-08-02 12:48:17 - PHP Notice:  Undefined index: desription in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:48:17 - PHP Notice:  Undefined index: desription in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:48:54 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:48:54 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:49:35 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:49:35 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:53:30 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 12:53:30 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 13:04:28 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:04:28 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:05:34 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:05:34 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:06:17 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:06:17 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:36:25 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:36:25 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:38:18 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:38:18 - PHP Notice:  Undefined index: attribute_groups in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 102
+2016-08-02 13:44:52 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:44:52 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:45:15 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:45:15 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:50:22 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:50:22 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:16 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:16 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:33 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:33 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:45 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:51:45 - PHP Notice:  Undefined variable: atr in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 103
+2016-08-02 13:54:16 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 13:54:18 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 13:54:32 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 13:56:08 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 13:56:25 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 13:56:47 - PHP Notice:  Undefined variable: www in /home/dmitriy/site/www/ecopolka/catalog/view/theme/default/template/product/category.tpl on line 137
+2016-08-02 14:31:34 - PHP Notice:  Undefined variable: price in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 14:31:34 - PHP Notice:  Undefined variable: price in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 14:33:14 - PHP Notice:  Undefined index: noname in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-02 14:33:14 - PHP Notice:  Undefined index: noname in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/product/category.tpl on line 383
+2016-08-03 9:49:49 - PHP Notice:  Undefined variable: acrion in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/module/filter.tpl on line 50
+2016-08-03 9:50:00 - PHP Notice:  Undefined variable: acrion in /home/dmitriy/site/www/ecopolka/catalog/view/theme/theme641/template/module/filter.tpl on line 50
+2016-08-03 13:30:04 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 19
+2016-08-03 13:30:04 - PHP Notice:  Error: Subquery returns more than 1 row<br />Error No: 1242<br />SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM oc_category_path cp LEFT JOIN oc_category_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '3' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM oc_url_alias WHERE query = 'category_id=56') AS keyword FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '56' AND cd2.language_id = '3' in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 41
+2016-08-03 13:30:04 - PHP Notice:  Trying to get property of non-object in /home/dmitriy/site/www/ecopolka/admin/model/catalog/category.php on line 213
+2016-08-03 13:30:06 - PHP Warning:  mysqli::query(): (21000/1242): Subquery returns more than 1 row in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 19
+2016-08-03 13:30:06 - PHP Notice:  Error: Subquery returns more than 1 row<br />Error No: 1242<br />SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM oc_category_path cp LEFT JOIN oc_category_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '3' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM oc_url_alias WHERE query = 'category_id=55') AS keyword FROM oc_category c LEFT JOIN oc_category_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '55' AND cd2.language_id = '3' in /home/dmitriy/site/www/ecopolka/system/library/db/mysqli.php on line 41
+2016-08-03 13:30:06 - PHP Notice:  Trying to get property of non-object in /home/dmitriy/site/www/ecopolka/admin/model/catalog/category.php on line 213

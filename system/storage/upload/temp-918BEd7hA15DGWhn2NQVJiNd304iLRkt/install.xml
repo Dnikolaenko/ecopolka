@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>TM Pages Lang</name>
+	<version>1.0</version>
+	<author>http://www.templatemonster.com</author>
+	<link>http://www.templatemonster.com</link>
+	<code>lang</code>
+	<file path="catalog/language/english/information/sitemap.php">
+        <operation>
+            <search><![CDATA[
+				$_['text_contact']     = 'Contact Us';
+				]]></search>
+            <add position="after"><![CDATA[
+				$_['text_category']     = 'Categories';
+				$_['text_pages']     = 'Pages';
+				]]></add>
+        </operation>
+	</file>
+	<file path="catalog/controller/information/sitemap.php">
+		<operation>
+			<search><![CDATA[ $data['text_contact'] = $this->language->get('text_contact'); ]]></search>
+			<add position="before"><![CDATA[		
+				$data['text_category'] = $this->language->get('text_category');
+				$data['text_pages'] = $this->language->get('text_pages');
+				]]></add>
+		</operation>
+	</file>
+
+		<file path="catalog/controller/product/compare.php">
+		<operation>
+			<search><![CDATA[ $json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('product/compare'));]]></search>
+			<add position="replace" offset="2"><![CDATA[]]></add>
+		</operation>
+
+			<operation>
+			<search><![CDATA[ $this->session->data['compare'][] = $this->request->post['product_id'];]]></search>
+			<add position="after"><![CDATA[
+				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('product/compare'));
+
+			$json['total'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+				]]></add>
+		</operation>
+			<operation>
+			<search><![CDATA[ array_shift($this->session->data['compare']); ]]></search>
+			<add position="after"><![CDATA[ 
+				$json['warning'] = $this->language->get('text_warning');
+				]]></add>
+		</operation>
+			<operation>
+			<search><![CDATA[ $json['total'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0)); ]]></search>
+			<add position="after" offset="2"><![CDATA[ 
+				else{
+					$json['info'] = $this->language->get('text_info');
+				}
+				]]></add>
+		</operation>
+	</file>
+
+
+	<file path="catalog/language/english/product/compare.php">
+		<operation>
+			<search><![CDATA[ $_['text_reviews']      = 'Based on %s reviews.'; ]]></search>
+			<add position="replace"><![CDATA[		
+			$_['text_reviews']      = '%s reviews.';
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[ $_['text_summary']      = 'Summary'; ]]></search>
+			<add position="after"><![CDATA[		
+			$_['text_info']      = 'This product already added in comparison list!';
+			$_['text_warning']      = 'Maximum products to compare is 4. First added product has been removed from comparison list.';
+				]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/language/russian/product/compare.php">
+		<operation>
+			<search><![CDATA[ $_['text_reviews']      = 'Всего отзывов: %s'; ]]></search>
+			<add position="replace"><![CDATA[		
+			$_['text_reviews']      = 'Отзывов: %s';
+				]]></add>
+		</operation>
+		<operation>
+			<search><![CDATA[ $_['text_summary']      = 'Краткое описание'; ]]></search>
+			<add position="after"><![CDATA[		
+			$_['text_info']      = 'Данный товар уже добавлен в список сравнения!';
+			$_['text_warning']      = 'Максимальное количество продуктов для сравнения - 4. Первый добавленный продукт удален со списка.';
+				]]></add>
+		</operation>
+	</file>
+
+	<file path="catalog/language/de-DE/product/compare.php">
+		<operation>
+			<search><![CDATA[ $_['text_summary']		= 'Zusammenfassung'; ]]></search>
+			<add position="after"><![CDATA[		
+			$_['text_info']      = 'Dieses Produkt ist bereits in Vergleichsliste hinzugefügt!';
+			$_['text_warning']      = 'Maximale Artikel zum Vergleichen ist 4. Erste hinzugefügt Produkt wurde aus Vergleichsliste entfernt wurden.';
+				]]></add>
+		</operation>
+	</file>
+	<file path="system/library/pagination.php">
+		<operation>
+			<search><![CDATA[ 	public $num_links = 8; ]]></search>
+			<add position="replace"><![CDATA[		
+				public $num_links = 3;
+				]]></add>
+		</operation>
+	</file>
+</modification>
